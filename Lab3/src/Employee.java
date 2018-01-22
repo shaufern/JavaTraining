@@ -14,7 +14,7 @@ public class Employee {
 	public Date mDate;
 	public int mID=0;
 	public static int id=1;
-
+	public static int count=0;
 	{
 		mID=id++;
 	}
@@ -24,6 +24,12 @@ public class Employee {
 		mLastName=LastName;
 		mGrade=Grade;
 		mDate=date;
+		count++;
 	}
-	
+	public String toString()
+	{
+		String s="";
+		s+=("First Name: "+mFirstName+" Last Name: "+mLastName+" Grade: "+mGrade+" Date: "+mDate.toString());
+		return s;
+	}
 }

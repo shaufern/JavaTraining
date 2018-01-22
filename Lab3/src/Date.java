@@ -9,4 +9,11 @@ public class Date {
 		mMth=mth;
 		mYear=year;
 	}
+	public String toString()
+	{
+		String s="";
+		s+=(mDay+"/"+mMth+"/"+mYear);
+		return s;
+	}
+	
 }
